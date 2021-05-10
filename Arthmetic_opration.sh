@@ -7,3 +7,8 @@ echo "To Take Three Inputs"
 read -p "Enter first number  - " a
 read -p "Enter first number  - " b
 read -p "Enter first number  - " c
+
+echo "To Compute Arithmetic Operation"
+
+result1=$((a+b*c))
+echo "$result1"
