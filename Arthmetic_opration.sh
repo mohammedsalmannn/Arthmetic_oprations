@@ -21,3 +21,14 @@ echo "$result3"
 
 result4=$((a%b+c))
 echo "$result4"
+
+echo "Store the results in a Dictionary for every Computation"
+
+declare -i arithmetic
+
+arithmetic[result1]=$result1
+arithmetic[result2]=$result2
+arithmetic[result3]=$result3
+arithmetic[result4]=$result4
+
+echo "Results from all computations - "  ${arithmetic[@]}
