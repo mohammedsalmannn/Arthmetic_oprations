@@ -32,3 +32,13 @@ arithmetic[result3]=$result3
 arithmetic[result4]=$result4
 
 echo "Results from all computations - "  ${arithmetic[@]}
+
+echo "Read The Values From The Dictionary Into The Array"
+
+for((index=0; index<=${#arithmetic[@]}; index++))
+do
+	array[index]=${arithmetic[result$((index+1))]}
+done
+
+echo "${array[@]}"
+
